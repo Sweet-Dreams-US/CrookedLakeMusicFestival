@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button';
 
 const highlights = [
   { icon: Waves, title: 'On the Water', description: 'Boat up to the sandbar for a unique festival experience' },
-  { icon: Music, title: 'Two Stages', description: 'Main Stage and Sandbar Stage with non-stop music' },
+  { icon: Music, title: 'Live Music', description: 'Non-stop music on the sandbar stage all weekend' },
   { icon: Anchor, title: 'Boat Friendly', description: 'Anchor up and enjoy from your boat or on the sandbar' },
   { icon: MapPin, title: 'Angola, Indiana', description: 'Located on beautiful Crooked Lake in Steuben County' },
 ];

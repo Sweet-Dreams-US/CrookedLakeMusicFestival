@@ -3,7 +3,7 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
 const venueHighlights = [
-  { icon: Anchor, title: 'Boat Access', desc: 'Boat directly to the sandbar from any Crooked Lake launch' },
+  { icon: Anchor, title: 'Boat Access', desc: 'Boat directly to the sandbar from the public launch on Crooked Lake' },
   { icon: Sun, title: 'Sun & Sand', desc: 'Natural sandbar setting with shallow water perfect for wading' },
   { icon: ShieldCheck, title: 'Safety First', desc: 'On-water safety patrol and first aid on site' },
   { icon: Droplets, title: 'Lake Life', desc: 'Swim, float, and enjoy the water between sets' },
@@ -60,7 +60,7 @@ export default function VenuePage() {
             <ScrollReveal animation="fadeUp">
               <div className="bg-white rounded-3xl p-8 shadow-soft space-y-6">
                 <div className="flex items-start gap-4"><MapPin size={24} className="text-lake flex-shrink-0 mt-1" /><div><h3 className="font-display font-bold text-lake-950 mb-1">Address</h3><p className="text-sand-800/70">The Sandbar, Crooked Lake<br />Angola, Indiana 46703</p></div></div>
-                <div className="flex items-start gap-4"><Car size={24} className="text-lake flex-shrink-0 mt-1" /><div><h3 className="font-display font-bold text-lake-950 mb-1">By Boat</h3><p className="text-sand-800/70">Access the sandbar by boat from any public launch on Crooked Lake. The sandbar is located in the center of the lake.</p></div></div>
+                <div className="flex items-start gap-4"><Car size={24} className="text-lake flex-shrink-0 mt-1" /><div><h3 className="font-display font-bold text-lake-950 mb-1">By Boat</h3><p className="text-sand-800/70">Access the sandbar by boat from the public launch on Crooked Lake. The sandbar is located in the center of the lake.</p></div></div>
               </div>
             </ScrollReveal>
           </div>

@@ -24,7 +24,7 @@ export default function LivestreamPage() {
           <ScrollReveal animation="fadeUp" delay={0.1}>
             <div className="bg-white rounded-2xl p-6 shadow-soft">
               <div className="flex items-center gap-3 mb-3"><Radio size={20} className="text-pink" /><h3 className="font-display font-bold text-lake-950">Live Coverage</h3></div>
-              <p className="text-sm text-sand-800/70">We&apos;ll be streaming live from both stages throughout the weekend.</p>
+              <p className="text-sm text-sand-800/70">We&apos;ll be streaming live from the stage throughout the weekend.</p>
             </div>
           </ScrollReveal>
           <ScrollReveal animation="fadeUp" delay={0.2}>

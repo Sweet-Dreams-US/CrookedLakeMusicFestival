@@ -1,19 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import { Heart, Shield, Guitar, Tent, Truck, Megaphone, Lock, Facebook, Instagram, CheckCircle } from 'lucide-react';
+import { Heart, Lock, Facebook, Instagram, CheckCircle } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
 import Turnstile from '@/components/ui/Turnstile';
 import TikTokIcon from '@/components/icons/TikTokIcon';
-import { donationTiers, fundAllocations, SWIPESIMPLE_LINKS, SWIPESIMPLE_ANY_AMOUNT } from '@/data/donations';
+import { donationTiers, SWIPESIMPLE_LINKS, SWIPESIMPLE_ANY_AMOUNT } from '@/data/donations';
 import { SITE_CONFIG } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import type { DonationTier } from '@/types';
-
-const iconMap: Record<string, React.ElementType> = { Guitar, Shield, Tent, Truck, Megaphone };
 
 const inquiryTypes = ['Volunteer', 'Sponsor', 'General Inquiry'];
 
@@ -103,25 +101,7 @@ export default function DonatePage() {
           </div>
         </section>
 
-        <section className="py-16">
-          <SectionHeading title="WHERE YOUR MONEY GOES" subtitle="Every dollar makes a difference" />
-          <div className="max-w-2xl mx-auto space-y-4 mt-8">
-            {fundAllocations.map((alloc, i) => {
-              const IconComp = iconMap[alloc.icon] || Heart;
-              return (
-                <ScrollReveal key={alloc.category} animation="fadeUp" delay={i * 0.1}>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-lake/10 flex items-center justify-center flex-shrink-0"><IconComp size={20} className="text-lake" /></div>
-                    <div className="flex-1">
-                      <div className="flex justify-between mb-1"><span className="text-sm font-semibold text-lake-950">{alloc.category}</span><span className="text-sm font-bold text-lake">{alloc.percentage}%</span></div>
-                      <div className="h-3 bg-lake-100 rounded-full overflow-hidden"><div className={cn('h-full rounded-full transition-all duration-1000', alloc.color)} style={{ width: `${alloc.percentage}%` }} /></div>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              );
-            })}
-          </div>
-        </section>
+        {/* WHERE YOUR MONEY GOES - hidden until percentages are finalized */}
 
         <section className="py-16">
           <SectionHeading title="OTHER WAYS TO HELP" />
