@@ -24,7 +24,7 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <img src={assetPath('/images/CrookedLakeSandbarMusicFestLogoNoShadow.png')} alt="Crooked Lake Sandbar Music Festival" className={cn('transition-all duration-300', isScrolled ? 'h-10' : 'h-12')} />
+              <img src={assetPath('/images/CrookedLakeSandbarMusicFestLogoNoShadow.png')} alt="Crooked Lake Sandbar Music Festival" className={cn('transition-all duration-300 drop-shadow-[0_0_12px_rgba(0,0,0,0.4)]', isScrolled ? 'h-10' : 'h-12')} />
             </Link>
 
             <div className="hidden lg:flex items-center gap-1">
