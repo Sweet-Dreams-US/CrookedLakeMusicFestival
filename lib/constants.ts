@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   name: 'Crooked Lake Sandbar Music Festival',
-  shortName: 'Sandbar Fest',
+  shortName: 'Sandbar Music Fest',
   tagline: 'Music on the Water',
   description: 'A charity music festival on the sandbar at Crooked Lake in Angola, Indiana. Boat out, party, and enjoy live music for a great cause.',
   dates: 'July 24-25, 2026',

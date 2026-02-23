@@ -9,7 +9,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: {
     default: 'Crooked Lake Sandbar Music Festival 2026',
-    template: '%s | Sandbar Fest 2026',
+    template: '%s | Sandbar Music Fest 2026',
   },
   description:
     'A charity music festival on the sandbar at Crooked Lake in Angola, Indiana. July 24-25, 2026. Boat out, enjoy live music, and support a great cause.',

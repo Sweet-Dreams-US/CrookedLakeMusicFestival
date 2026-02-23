@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="font-display text-2xl font-bold mb-3">SANDBAR FEST</h3>
+            <h3 className="font-display text-2xl font-bold mb-3">SANDBAR MUSIC FEST</h3>
             <p className="text-white/60 text-sm leading-relaxed mb-4">{SITE_CONFIG.tagline}</p>
             <p className="text-white/60 text-sm">A charity music festival on Crooked Lake,<br />Angola, Indiana</p>
           </div>
