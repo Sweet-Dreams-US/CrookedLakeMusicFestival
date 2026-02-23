@@ -24,8 +24,8 @@ export default function SchedulePage() {
         <ScrollReveal animation="fadeUp">
           <div className="bg-white rounded-2xl p-12 shadow-soft border-2 border-lake/10 text-center">
             <Clock size={48} className="mx-auto text-lake/30 mb-4" />
-            <h3 className="font-display font-bold text-2xl text-lake-950 mb-2">Schedule Coming Soon</h3>
-            <p className="text-sand-800/60 max-w-md mx-auto">The {day === 'friday' ? 'Friday' : 'Saturday'} lineup hasn&apos;t been announced yet. Check back soon for the full schedule!</p>
+            <h3 className="font-display font-bold text-2xl text-lake-950 mb-2">Lineup Announcement Coming Soon</h3>
+            <p className="text-sand-800/60 max-w-md mx-auto">This year&apos;s lineup is solidified &mdash; the official {day === 'friday' ? 'Friday' : 'Saturday'} schedule will be announced soon. Check back!</p>
           </div>
         </ScrollReveal>
       </div>
