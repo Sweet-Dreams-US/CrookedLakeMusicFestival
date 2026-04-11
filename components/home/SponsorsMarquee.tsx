@@ -26,7 +26,7 @@ export default function SponsorsMarquee() {
             const style = tierStyles[sponsor.tier];
             return (
               <a key={sponsor.id} href={sponsor.website} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 group text-center">
-                {style.label && <span className="block text-xs font-bold uppercase tracking-wider text-lake mb-2">{style.label}</span>}
+                {(sponsor.id === 'sweet-dreams' ? 'Media & Marketing Sponsor' : style.label) && <span className="block text-xs font-bold uppercase tracking-wider text-lake mb-2">{sponsor.id === 'sweet-dreams' ? 'Media & Marketing Sponsor' : style.label}</span>}
                 <div className={cn(style.size, 'rounded-xl bg-lake-50 flex items-center justify-center hover:grayscale-0 transition-all duration-300 group-hover:shadow-elevated p-4')}>
                   <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
                 </div>

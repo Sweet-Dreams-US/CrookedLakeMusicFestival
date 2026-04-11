@@ -47,7 +47,7 @@ export default function Footer() {
           <p className="text-white/40 text-sm">All proceeds donated to charity.</p>
         </div>
         <div className="mt-4 text-center">
-          <a href="https://sweetdreams.us/" target="_blank" rel="noopener noreferrer" className="text-white/25 hover:text-white/40 text-xs transition-colors">Website built by Sweet Dreams</a>
+          <a href="https://sweetdreams.us/" target="_blank" rel="noopener noreferrer" className="text-white/25 hover:text-white/40 text-xs transition-colors">Website built by <span className="text-sm" style={{ fontFamily: 'var(--font-anton)' }}>Sweet Dreams</span></a>
         </div>
       </div>
     </footer>

@@ -11,6 +11,12 @@ export const sponsors: Sponsor[] = [
   { id: 'koosters', name: "Kooster's Body & Frame Shop", logo: '/images/sponsors/KoostersBodyandFrameShoplogo.png', website: '#', tier: 'silver' },
   { id: 'legacy-plumbing', name: 'Legacy Plumbing', logo: '/images/sponsors/LegacyPlumpingLogo.png', website: '#', tier: 'silver' },
   { id: 'pier-place', name: 'Pier Place of Angola', logo: '/images/sponsors/PierPlaceOfAngolaLogo.png', website: '#', tier: 'silver' },
+  { id: 'sweet-dreams', name: 'Sweet Dreams', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'gold' },
   { id: 'seaway-scaffold', name: 'Seaway Scaffold', logo: '/images/sponsors/SeawayScafoldLogo.jpg', website: '#', tier: 'community' },
   { id: 'united-rentals', name: 'United Rentals', logo: '/images/sponsors/UnitedRentalsLogo.png', website: '#', tier: 'community' },
+  { id: 'beachin-bottoms', name: "Beachin' Bottoms", logo: '/images/sponsors/BeachinBottomsLogo.jpg', website: '#', tier: 'community' },
+  { id: 'jersey-mikes', name: "Jersey Mike's", logo: '/images/sponsors/JerseyMikesLogo.jpeg', website: '#', tier: 'community' },
+  { id: 'pizza-hut', name: 'Pizza Hut', logo: '/images/sponsors/PizzaHutLogo.png', website: '#', tier: 'community' },
+  { id: 'subway', name: 'Subway', logo: '/images/sponsors/SubwayLogo.png', website: '#', tier: 'community' },
+  { id: 'yard-works', name: 'Yard Works', logo: '/images/sponsors/YardWorksLogo.png', website: '#', tier: 'community' },
 ];
