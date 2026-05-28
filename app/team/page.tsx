@@ -2,10 +2,14 @@ import { teamMembers, festivalStory } from '@/data/team';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import Button from '@/components/ui/Button';
-import { User, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
+
+const OFFICER_TITLES = new Set(['President', 'Vice President', 'Secretary/Treasurer', 'Secretary', 'Treasurer']);
 
 export default function TeamPage() {
   const boardMembers = teamMembers.filter((m) => m.category === 'board').sort((a, b) => a.order - b.order);
+  const officers = boardMembers.filter((m) => OFFICER_TITLES.has(m.title));
+  const directors = boardMembers.filter((m) => !OFFICER_TITLES.has(m.title));
   const teamLeads = teamMembers.filter((m) => m.category === 'team').sort((a, b) => a.order - b.order);
 
   return (
@@ -24,39 +28,44 @@ export default function TeamPage() {
         {boardMembers.length > 0 && (
           <section className="mb-20">
             <h3 className="font-display text-2xl font-bold text-lake-950 text-center mb-8">Board of Directors</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {boardMembers.map((member, i) => (
-                <ScrollReveal key={member.id} animation="fadeUp" delay={i * 0.1}>
-                  <div className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-2">
-                    <div className="aspect-[3/4] bg-gradient-to-br from-lake-200 to-lake-300 relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center"><User size={64} className="text-lake/30" /></div>
+
+            {officers.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-6">
+                {officers.map((member, i) => (
+                  <ScrollReveal key={member.id} animation="fadeUp" delay={i * 0.08}>
+                    <div className="bg-white rounded-2xl p-6 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 text-center h-full">
+                      <p className="text-lake text-xs font-bold uppercase tracking-wider mb-2">{member.title}</p>
+                      <h4 className="font-display text-xl font-bold text-lake-950">{member.name}</h4>
                     </div>
-                    <div className="p-5">
-                      <h4 className="font-display text-lg font-bold text-lake-950">{member.name}</h4>
-                      <p className="text-lake text-sm font-semibold">{member.title}</p>
-                      {member.bio && <p className="text-sand-800/60 text-sm mt-2">{member.bio}</p>}
+                  </ScrollReveal>
+                ))}
+              </div>
+            )}
+
+            {directors.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                {directors.map((member, i) => (
+                  <ScrollReveal key={member.id} animation="fadeUp" delay={i * 0.05}>
+                    <div className="bg-white rounded-xl px-5 py-4 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 text-center">
+                      <h4 className="font-display font-bold text-lake-950">{member.name}</h4>
+                      <p className="text-lake text-sm font-semibold mt-0.5">{member.title}</p>
                     </div>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
+                  </ScrollReveal>
+                ))}
+              </div>
+            )}
           </section>
         )}
 
         {teamLeads.length > 0 && (
           <section className="mb-20">
             <h3 className="font-display text-2xl font-bold text-lake-950 text-center mb-8">Team Leads</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {teamLeads.map((member, i) => (
-                <ScrollReveal key={member.id} animation="fadeUp" delay={i * 0.08}>
-                  <div className="group bg-white rounded-xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
-                    <div className="aspect-square bg-gradient-to-br from-lake-100 to-lake-200 relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center"><User size={40} className="text-lake/20" /></div>
-                    </div>
-                    <div className="p-4 text-center">
-                      <h4 className="font-display font-bold text-lake-950 text-sm">{member.name}</h4>
-                      <p className="text-lake text-xs font-semibold">{member.title}</p>
-                    </div>
+                <ScrollReveal key={member.id} animation="fadeUp" delay={i * 0.05}>
+                  <div className="bg-white rounded-xl px-5 py-4 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 text-center">
+                    <h4 className="font-display font-bold text-lake-950">{member.name}</h4>
+                    <p className="text-lake text-sm font-semibold mt-0.5">{member.title}</p>
                   </div>
                 </ScrollReveal>
               ))}
