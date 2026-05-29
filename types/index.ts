@@ -29,12 +29,23 @@ export interface ScheduleEvent {
   isHeadliner?: boolean;
 }
 
+export type SponsorTier =
+  | 'title'
+  | 'stage'
+  | 'merchandise'
+  | 'production'
+  | 'fireworks'
+  | 'platinum'
+  | 'gold'
+  | 'silver'
+  | 'community';
+
 export interface Sponsor {
   id: string;
   name: string;
   logo: string;
   website: string;
-  tier: 'title' | 'gold' | 'silver' | 'community';
+  tier: SponsorTier;
 }
 
 export interface FAQItem {
