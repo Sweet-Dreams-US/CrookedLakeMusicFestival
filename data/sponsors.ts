@@ -47,6 +47,7 @@ export const sponsors: Sponsor[] = [
   { id: 'trux-unlimited', name: 'Trux Unlimited', logo: '/images/sponsors/Truxitlogo.png', website: '#', tier: 'silver' },
   { id: 'hot-rod-carts', name: 'Hot Rod Carts LLC', logo: '/images/sponsors/Hodrodgolfcartslogo.png', website: '#', tier: 'silver' },
   { id: 'indiana-warm-floors', name: 'Indiana Warm Floors Inc.', logo: '/images/sponsors/Indianawarmfloors.jpeg', website: '#', tier: 'silver' },
+  { id: 'mikes-heating-air', name: "Mike's Heating & Air", logo: '/images/sponsors/MikesHeatingAndAirLogo.png', website: '#', tier: 'silver' },
 
   // Community Partners (order matters)
   { id: 'subway', name: 'Subway', logo: '/images/sponsors/SubwayLogo.png', website: '#', tier: 'community' },
