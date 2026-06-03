@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
     instagram: 'https://www.instagram.com/sandbarmusicfest/',
     tiktok: 'https://www.tiktok.com/@sandbar.music.fes',
   },
-  googleSheetsUrl: '',
+  googleSheetsUrl: 'https://script.google.com/macros/s/AKfycbyBt45214DDdPN12IpfvUTFCmdEpftTLcK9ZrOQ-dkjhrA2sUs8_VNMj01SmAB2zzD0/exec',
   turnstileSiteKey: '0x4AAAAAACVZNsLhghW6IWbg',
 };
 
