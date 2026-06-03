@@ -20,7 +20,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={cn('fixed top-0 left-0 right-0 z-50 transition-all duration-500', isScrolled ? 'bg-pink shadow-soft py-2' : 'bg-pink/90 backdrop-blur-sm py-3')}>
+      <nav className={cn('fixed top-0 left-0 right-0 z-50 transition-all duration-500', isScrolled ? 'bg-white/90 backdrop-blur-md shadow-soft py-2' : 'bg-white/70 backdrop-blur-md py-3')}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
@@ -29,13 +29,13 @@ export default function Navigation() {
 
             <div className="hidden lg:flex items-center gap-1">
               {mainNavLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 text-white/90 hover:text-white hover:bg-white/10">
+                <Link key={link.href} href={link.href} className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 text-lake-950/80 hover:text-lake hover:bg-lake-950/5">
                   {link.label}
                 </Link>
               ))}
 
               <div className="relative">
-                <button onClick={() => setIsMoreOpen(!isMoreOpen)} onBlur={() => setTimeout(() => setIsMoreOpen(false), 200)} className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-1 text-white/90 hover:text-white">
+                <button onClick={() => setIsMoreOpen(!isMoreOpen)} onBlur={() => setTimeout(() => setIsMoreOpen(false), 200)} className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-1 text-lake-950/80 hover:text-lake">
                   More <ChevronDown size={14} className={cn('transition-transform', isMoreOpen && 'rotate-180')} />
                 </button>
                 {isMoreOpen && (
@@ -54,7 +54,7 @@ export default function Navigation() {
               </Link>
             </div>
 
-            <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="lg:hidden p-2 rounded-full transition-colors text-white hover:bg-white/10" aria-label="Toggle menu">
+            <button onClick={() => setIsMobileOpen(!isMobileOpen)} className="lg:hidden p-2 rounded-full transition-colors text-lake-950 hover:bg-lake-950/10" aria-label="Toggle menu">
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
