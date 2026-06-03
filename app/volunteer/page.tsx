@@ -16,7 +16,7 @@ const benefits = [
   { icon: Users, title: 'Community', desc: 'Be part of the team that makes it all happen' },
 ];
 
-const roles = ['Gate & Tickets', 'Parking & Boat Launch', 'Boat Shuttle', 'Setup & Teardown', 'Info Booth', 'Safety & First Aid', 'Merchandise', 'Food & Beverage', 'General Support'];
+const roles = ['Parking & Boat Launch', 'Boat Shuttle', 'Setup & Teardown', 'Merchandise'];
 
 export default function VolunteerPage() {
   const [submitted, setSubmitted] = useState(false);
