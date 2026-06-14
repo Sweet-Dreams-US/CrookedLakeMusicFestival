@@ -40,7 +40,7 @@ export const sponsors: Sponsor[] = [
   { id: 'hall-aluminum', name: 'Hall Aluminum Products', logo: '/images/sponsors/haplogo.jpeg', website: '#', tier: 'gold' },
   { id: 'freedom-fun-usa', name: 'Freedom Fun USA', logo: '/images/sponsors/FreedomFunUSAlogo.jpeg', website: '#', tier: 'gold' },
   { id: 'steuben-campground', name: 'Steuben County Campground', logo: '/images/sponsors/campgroundlogo.png', website: '#', tier: 'gold' },
-  { id: 'kustom-floor-trim', name: 'Kustom Floor and Trim', logo: '/images/sponsors/KustomFloorandTrim.JPEG', website: '#', tier: 'gold' },
+  { id: 'kustom-floor-trim', name: 'Kustom Floor and Finish', logo: '/images/sponsors/KustomFloorandTrim.JPEG', website: '#', tier: 'gold' },
 
   // Silver Sponsors (order matters)
   { id: 'seyfert-concrete', name: 'Seyfert Concrete', logo: '/images/sponsors/SeyfertConcreteLogo.png', website: '#', tier: 'silver' },
