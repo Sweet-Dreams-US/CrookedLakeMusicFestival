@@ -1,4 +1,5 @@
 import HeroSection from '@/components/home/HeroSection';
+import MissionSection from '@/components/home/MissionSection';
 import LineupPreview from '@/components/home/LineupPreview';
 import VideoSection from '@/components/home/VideoSection';
 import VenuePreview from '@/components/home/VenuePreview';
@@ -9,6 +10,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <MissionSection />
       <VideoSection />
       <SponsorsSection />
       <LineupPreview />
