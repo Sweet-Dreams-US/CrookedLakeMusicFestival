@@ -35,6 +35,7 @@ export type SponsorTier =
   | 'merchandise'
   | 'production'
   | 'fireworks'
+  | 'marketing'
   | 'platinum'
   | 'gold'
   | 'silver'

@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button';
 import { assetPath, cn } from '@/lib/utils';
 import type { Sponsor, SponsorTier } from '@/types';
 
-const FEATURED_TIERS: SponsorTier[] = ['title', 'stage', 'merchandise', 'production', 'fireworks'];
+const FEATURED_TIERS: SponsorTier[] = ['title', 'stage', 'merchandise', 'production', 'fireworks', 'marketing'];
 
 const featuredStyles: Record<string, { size: string; label: string }> = {
   title: { size: 'w-64 h-32', label: 'Title Sponsor' },
@@ -12,6 +12,7 @@ const featuredStyles: Record<string, { size: string; label: string }> = {
   merchandise: { size: 'w-48 h-24', label: 'Merchandise Sponsor' },
   production: { size: 'w-48 h-24', label: 'Production Sponsor' },
   fireworks: { size: 'w-48 h-24', label: 'Fireworks Sponsor' },
+  marketing: { size: 'w-48 h-24', label: 'Marketing Sponsor' },
 };
 
 function FeaturedSponsor({ sponsor }: { sponsor: Sponsor }) {
