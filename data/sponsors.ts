@@ -17,6 +17,9 @@ export const sponsors: Sponsor[] = [
   // Fireworks Sponsor
   { id: 'indiana-booms-bangs', name: 'Indiana Booms and Bangs', logo: '/images/sponsors/indianaBoomsandBangs.jpg', website: '#', tier: 'fireworks' },
 
+  // Marketing Sponsor
+  { id: 'sweet-dreams', name: 'Sweet Dreams US LLC', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'marketing' },
+
   // Platinum Sponsors (order matters)
   { id: 'crush-house', name: 'Crush House Entertainment LLC', logo: '/images/sponsors/CrushHouseEntLogo.jpg', website: '#', tier: 'platinum' },
   { id: 'pier-place', name: 'Pier Place Angola', logo: '/images/sponsors/PierPlaceOfAngolaLogo.png', website: '#', tier: 'platinum' },
@@ -26,7 +29,6 @@ export const sponsors: Sponsor[] = [
   { id: 'lakeland-internet', name: 'Lakeland Internet', logo: '/images/sponsors/LakelandInternetLogo.png', website: '#', tier: 'platinum' },
   { id: 'contact-financial', name: 'Contact Financial Services Inc', logo: '/images/sponsors/ContactFinancialServicesLogo.png', website: '#', tier: 'platinum' },
   { id: 'yardworks', name: 'Yardworks', logo: '/images/sponsors/YardWorksLogo.png', website: '#', tier: 'platinum' },
-  { id: 'sweet-dreams', name: 'Sweet Dreams US LLC', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'platinum' },
   { id: 'mr-meatz', name: 'Mr. Meatz', logo: '/images/sponsors/mrmeatz.png', website: '#', tier: 'platinum' },
   { id: 'beachin-bottoms', name: "Beachin' Bottoms LLC", logo: '/images/sponsors/BeachinBottomsLogo.jpg', website: '#', tier: 'platinum' },
   { id: 'lagrange-family-dentistry', name: 'Lagrange Family Dentistry', logo: '/images/sponsors/LagrangeFamilyDentistry.png', website: '#', tier: 'platinum' },
@@ -49,6 +51,7 @@ export const sponsors: Sponsor[] = [
   { id: 'indiana-warm-floors', name: 'Indiana Warm Floors Inc.', logo: '/images/sponsors/Indianawarmfloors.jpeg', website: '#', tier: 'silver' },
   { id: 'mikes-heating-air', name: "Mike's Heating & Air", logo: '/images/sponsors/MikesHeatingAndAirLogo.png', website: '#', tier: 'silver' },
   { id: 'double-k-dumpster', name: 'Double K Dumpster', logo: '/images/sponsors/DoubleKDumpsterLogo.JPG', website: '#', tier: 'silver' },
+  { id: '4-sons-insulation', name: '4 Sons Insulation', logo: '/images/sponsors/4SonsInsulation.png', website: '#', tier: 'silver' },
 
   // Community Partners (order matters)
   { id: 'subway', name: 'Subway', logo: '/images/sponsors/SubwayLogo.png', website: '#', tier: 'community' },
