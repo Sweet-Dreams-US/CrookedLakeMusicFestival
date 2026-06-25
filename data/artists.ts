@@ -22,16 +22,6 @@ export const artists: Artist[] = [
     featured: true,
   },
   {
-    id: 'connor-christian',
-    name: 'Connor Christian',
-    slug: 'connor-christian',
-    image: '/images/bands/ConnorChristianLogo.png',
-    genre: '',
-    tier: 'supporting',
-    day: 'both',
-    featured: true,
-  },
-  {
     id: 'groupies-wanted',
     name: 'Groupies Wanted',
     slug: 'groupies-wanted',
