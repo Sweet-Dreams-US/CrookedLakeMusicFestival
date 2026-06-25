@@ -55,7 +55,11 @@ export default function SponsorsSection() {
               rel="noopener noreferrer"
               className="flex items-center justify-center h-24 rounded-xl bg-lake-50 p-4 shadow-soft hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
             >
-              <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
+              {sponsor.logo.endsWith('placeholder.svg') ? (
+                <span className="font-display font-semibold text-lake-950 text-sm text-center">{sponsor.name}</span>
+              ) : (
+                <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
+              )}
             </a>
           ))}
         </div>

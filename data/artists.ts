@@ -82,16 +82,6 @@ export const artists: Artist[] = [
     featured: true,
   },
   {
-    id: 'the-brothers-footman',
-    name: 'The Brothers Footman',
-    slug: 'the-brothers-footman',
-    image: '/images/bands/TheBrothersFootmanLogo.png',
-    genre: '',
-    tier: 'supporting',
-    day: 'both',
-    featured: true,
-  },
-  {
     id: 'this-homemade-conspiracy',
     name: 'This Homemade Conspiracy',
     slug: 'this-homemade-conspiracy',

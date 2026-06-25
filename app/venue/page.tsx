@@ -66,21 +66,6 @@ export default function VenuePage() {
           </div>
         </section>
         <section className="py-16">
-          <SectionHeading title="PUBLIC PARKING" subtitle="Park here and head to the lake" />
-          <ScrollReveal animation="fadeUp">
-            <div className="relative aspect-[16/9] max-w-4xl mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-lake-100 to-lake-200 shadow-soft">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.9893715752158!2d-85.03635195013644!3d41.666534276575376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88162f3bca1906ed%3A0x5fea30d2b632d356!2sCrooked%20Lake%2C%20IN%2046703!5e1!3m2!1sen!2sus!4v1770865445301!5m2!1sen!2sus"
-                className="w-full h-full"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </ScrollReveal>
-        </section>
-        <section className="py-16">
           <SectionHeading title="WHERE TO STAY" subtitle="Nearby accommodations for the weekend" />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto mt-8">
             {accommodations.map((acc, i) => (
