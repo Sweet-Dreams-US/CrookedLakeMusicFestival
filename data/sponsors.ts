@@ -14,8 +14,9 @@ export const sponsors: Sponsor[] = [
   // Production Sponsor
   { id: 'koosters', name: "Koester's Body and Frame", logo: '/images/sponsors/KoostersBodyandFrameShoplogo.png', website: '#', tier: 'production' },
 
-  // Fireworks Sponsor
-  { id: 'indiana-booms-bangs', name: 'Indiana Booms and Bangs', logo: '/images/sponsors/indianaBoomsandBangs.jpg', website: '#', tier: 'fireworks' },
+  // Fireworks Sponsor — hidden for now while the relationship is worked out.
+  // Re-enable by uncommenting this entry (no other changes needed).
+  // { id: 'indiana-booms-bangs', name: 'Indiana Booms and Bangs', logo: '/images/sponsors/indianaBoomsandBangs.jpg', website: '#', tier: 'fireworks' },
 
   // Marketing Sponsor
   { id: 'sweet-dreams', name: 'Sweet Dreams US LLC', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'marketing' },
@@ -34,6 +35,10 @@ export const sponsors: Sponsor[] = [
   { id: 'lagrange-family-dentistry', name: 'Lagrange Family Dentistry', logo: '/images/sponsors/LagrangeFamilyDentistry.png', website: '#', tier: 'platinum' },
   { id: 'fort-wayne-metals', name: 'Fort Wayne Metals', logo: '/images/sponsors/FortWayneMetals.jpeg', website: '#', tier: 'platinum' },
   { id: 'roembke-manufacturing', name: 'Roembke Manufacturing', logo: '/images/sponsors/RoembkeManu.png', website: '#', tier: 'platinum' },
+  { id: 'happy-hour-crew', name: 'The Happy Hour Crew', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'platinum' },
+  { id: 'anchor-realty', name: 'Anchor Realty & United Country Real Estate', logo: '/images/sponsors/AnchorRealty.png', website: '#', tier: 'platinum' },
+  { id: 'danford-electric', name: 'Danford Electric', logo: '/images/sponsors/DanfordElectric.png', website: '#', tier: 'platinum' },
+  { id: 'arbys', name: "Arby's", logo: '/images/sponsors/ArbysLogo.png', website: '#', tier: 'platinum' },
 
   // Gold Sponsors (order matters)
   { id: 'seaway-scaffold', name: 'Seaway Scaffold & Equipment Co', logo: '/images/sponsors/SeawayScafoldLogo.jpg', website: '#', tier: 'gold' },
