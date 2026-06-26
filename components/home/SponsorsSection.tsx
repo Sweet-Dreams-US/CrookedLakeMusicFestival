@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { sponsors } from '@/data/sponsors';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Button from '@/components/ui/Button';
@@ -15,17 +16,40 @@ const featuredStyles: Record<string, { size: string; label: string }> = {
   marketing: { size: 'w-48 h-24', label: 'Marketing Sponsor' },
 };
 
+function hasLink(sponsor: Sponsor) {
+  return Boolean(sponsor.website) && sponsor.website !== '#';
+}
+
+function hasLogo(sponsor: Sponsor) {
+  return !sponsor.logo.endsWith('placeholder.svg');
+}
+
+// Wrap in an external link only when the sponsor has a real website; otherwise a plain div.
+function SponsorWrap({ sponsor, className, children }: { sponsor: Sponsor; className: string; children: ReactNode }) {
+  if (hasLink(sponsor)) {
+    return (
+      <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return <div className={className}>{children}</div>;
+}
+
 function FeaturedSponsor({ sponsor }: { sponsor: Sponsor }) {
   const style = featuredStyles[sponsor.tier];
   return (
-    <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 group text-center">
+    <SponsorWrap sponsor={sponsor} className="flex-shrink-0 group text-center">
       {style?.label && (
-        <span className="block text-xs font-bold uppercase tracking-wider text-lake mb-2">{style.label}</span>
+        <span className="block text-xs font-bold uppercase tracking-wider text-lake mb-1">{style.label}</span>
       )}
+      <span className="block font-display font-bold text-lake-950 text-sm mb-2">{sponsor.name}</span>
       <div className={cn(style?.size, 'rounded-xl bg-lake-50 flex items-center justify-center transition-all duration-300 group-hover:shadow-elevated p-4')}>
-        <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
+        {hasLogo(sponsor) && (
+          <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
+        )}
       </div>
-    </a>
+    </SponsorWrap>
   );
 }
 
@@ -45,22 +69,23 @@ export default function SponsorsSection() {
           ))}
         </div>
 
-        {/* All remaining sponsors — static, uniform grid */}
+        {/* All remaining sponsors — static grid, business name above each logo */}
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {remaining.map((sponsor) => (
-            <a
+            <SponsorWrap
               key={sponsor.id}
-              href={sponsor.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center h-24 rounded-xl bg-lake-50 p-4 shadow-soft hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
+              sponsor={sponsor}
+              className="flex flex-col items-center rounded-xl bg-lake-50 p-3 shadow-soft hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
             >
-              {sponsor.logo.endsWith('placeholder.svg') ? (
-                <span className="font-display font-semibold text-lake-950 text-sm text-center">{sponsor.name}</span>
-              ) : (
-                <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
-              )}
-            </a>
+              <span className="font-display font-semibold text-lake-950 text-xs sm:text-sm text-center leading-tight mb-2 min-h-[2.25rem] flex items-center justify-center">
+                {sponsor.name}
+              </span>
+              <div className="flex-1 flex items-center justify-center w-full h-16">
+                {hasLogo(sponsor) && (
+                  <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-16 object-contain" />
+                )}
+              </div>
+            </SponsorWrap>
           ))}
         </div>
 
