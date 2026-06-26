@@ -25,6 +25,10 @@ function hasLogo(sponsor: Sponsor): boolean {
   return !sponsor.logo.endsWith('placeholder.svg');
 }
 
+function hasLink(sponsor: Sponsor): boolean {
+  return Boolean(sponsor.website) && sponsor.website !== '#';
+}
+
 function SponsorCard({
   sponsor,
   logoHeight,
@@ -41,24 +45,29 @@ function SponsorCard({
       ? 'font-display font-bold text-lake-950 text-base md:text-lg mt-4 text-center'
       : 'font-display font-semibold text-lake-950 text-xs sm:text-sm mt-3 text-center';
 
-  return (
-    <a
-      href={sponsor.website}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={cn(
-        'flex flex-col items-center justify-center bg-white shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1',
-        padding,
-        radius,
-      )}
-    >
+  const className = cn(
+    'flex flex-col items-center justify-center bg-white shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1',
+    padding,
+    radius,
+  );
+
+  const inner = (
+    <>
       {hasLogo(sponsor) && (
         <div className={cn('w-full flex items-center justify-center', logoHeight)}>
           <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-h-full max-w-full object-contain" />
         </div>
       )}
       <p className={nameClass}>{sponsor.name}</p>
+    </>
+  );
+
+  return hasLink(sponsor) ? (
+    <a href={sponsor.website} target="_blank" rel="noopener noreferrer" className={className}>
+      {inner}
     </a>
+  ) : (
+    <div className={className}>{inner}</div>
   );
 }
 
