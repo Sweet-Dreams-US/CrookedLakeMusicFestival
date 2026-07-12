@@ -41,9 +41,7 @@ export const sponsors: Sponsor[] = [
   { id: 'lm-maintenance', name: 'L&M Maintenance and Equipment', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'platinum' },
 
   // Gold Sponsors (order matters)
-  { id: 'nyu-edge-concrete', name: 'Nyu-Edge Concrete', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'gold' },
   { id: 'seaway-scaffold', name: 'Seaway Scaffold & Equipment Co', logo: '/images/sponsors/SeawayScafoldLogo.jpg', website: 'https://www.seawayscaffold.com/', tier: 'gold' },
-  { id: 'bobay-flooring', name: 'Bobay Flooring', logo: '/images/sponsors/bobayflooringlogo.jpeg', website: 'https://bobayflooring.com/', tier: 'gold' },
   { id: 'dry-dock-marine', name: 'Dry Dock Marine', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'gold' },
   { id: 'caseys-cove', name: "Casey's Cove", logo: '/images/sponsors/CaseysCoveLogo.jpg', website: 'https://www.caseyscovemarina.com/', tier: 'gold' },
   { id: 'hall-aluminum', name: 'Hall Aluminum Products', logo: '/images/sponsors/haplogo.jpeg', website: 'https://www.hallaluminum.com/', tier: 'gold' },
