@@ -2,7 +2,7 @@ import { Mic } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import Button from '@/components/ui/Button';
-import { artists } from '@/data/artists';
+import { artists, specialPerformers } from '@/data/artists';
 import { assetPath } from '@/lib/utils';
 
 export default function LineupPreview() {
@@ -11,7 +11,16 @@ export default function LineupPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title="2026 LINEUP" subtitle="Two days of incredible live music on the water" />
         <ScrollReveal animation="fadeUp">
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="mt-12 flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+            {specialPerformers.map((name) => (
+              <div key={name} className="px-8 py-5 rounded-2xl bg-lake-50 border-2 border-lake/20 shadow-soft text-center">
+                <p className="font-display font-bold text-lake-950">{name}</p>
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
+        <ScrollReveal animation="fadeUp">
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {artists.map((artist) => (
               <div key={artist.id} className="flex flex-col items-center">
                 <div className="w-full aspect-square rounded-2xl border-2 border-lake/20 bg-lake-50 shadow-soft overflow-hidden flex items-center justify-center p-3">

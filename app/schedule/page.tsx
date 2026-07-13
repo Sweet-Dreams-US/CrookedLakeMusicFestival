@@ -1,6 +1,6 @@
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/ui/ScrollReveal';
-import { artists } from '@/data/artists';
+import { artists, specialPerformers } from '@/data/artists';
 import { assetPath } from '@/lib/utils';
 
 export default function SchedulePage() {
@@ -8,6 +8,16 @@ export default function SchedulePage() {
     <div className="pt-24 pb-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title="2026 LINEUP" subtitle="Two days of non-stop music on the water" />
+
+        <ScrollReveal animation="fadeUp">
+          <div className="flex flex-wrap justify-center gap-4 mb-6">
+            {specialPerformers.map((name) => (
+              <div key={name} className="px-8 py-5 rounded-2xl bg-lake-50 border-2 border-lake/20 shadow-soft text-center">
+                <p className="font-display font-bold text-lake-950">{name}</p>
+              </div>
+            ))}
+          </div>
+        </ScrollReveal>
 
         <ScrollReveal animation="fadeUp">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
