@@ -102,3 +102,6 @@ export const artists: Artist[] = [
     featured: true,
   },
 ];
+
+// Solo performers / DJ shown above the band lineup (no logos).
+export const specialPerformers: string[] = ['DJ Double K', 'Alyssa Ivanson'];
