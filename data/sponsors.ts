@@ -43,12 +43,12 @@ export const sponsors: Sponsor[] = [
 
   // Gold Sponsors (order matters)
   { id: 'seaway-scaffold', name: 'Seaway Scaffold & Equipment Co', logo: '/images/sponsors/SeawayScafoldLogo.jpg', website: 'https://www.seawayscaffold.com/', tier: 'gold' },
-  { id: 'dry-dock-marine', name: 'Dry Dock Marine', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'gold' },
+  { id: 'dry-dock-marine', name: 'Dry Dock Marine', logo: '/images/sponsors/DryDock.png', website: '#', tier: 'gold' },
   { id: 'caseys-cove', name: "Casey's Cove", logo: '/images/sponsors/CaseysCoveLogo.jpg', website: 'https://www.caseyscovemarina.com/', tier: 'gold' },
   { id: 'hall-aluminum', name: 'Hall Aluminum Products', logo: '/images/sponsors/haplogo.jpeg', website: 'https://www.hallaluminum.com/', tier: 'gold' },
   { id: 'freedom-fun-usa', name: 'Freedom Fun USA', logo: '/images/sponsors/FreedomFunUSAlogo.jpeg', website: 'https://www.freedomfunusa.com/location/fort-wayne-indiana', tier: 'gold' },
   { id: 'steuben-campground', name: 'Steuben County Campground', logo: '/images/sponsors/campgroundlogo.png', website: 'https://www.co.steuben.in.us/departments/county_park_department/camping_rentals.php', tier: 'gold' },
-  { id: 'club-paradise', name: 'Club Paradise / Paradise Express', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'gold' },
+  { id: 'club-paradise', name: 'Club Paradise / Paradise Express', logo: '/images/sponsors/clubparadiselogo.png', website: '#', tier: 'gold' },
   { id: 'fill-it-grill-it', name: 'Fill It and Grill It', logo: '/images/sponsors/placeholder.svg', website: '#', tier: 'gold' },
   { id: 'kustom-floor-trim', name: 'Kustom Floor and Finish', logo: '/images/sponsors/KustomFloorandTrim.JPEG', website: '#', tier: 'gold' },
   { id: 'double-k-dumpster', name: 'Double K Dumpster', logo: '/images/sponsors/DoubleKDumpsterLogo.JPG', website: '#', tier: 'gold' },
