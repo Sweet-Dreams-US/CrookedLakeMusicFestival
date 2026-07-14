@@ -39,6 +39,7 @@ export const sponsors: Sponsor[] = [
   { id: 'mr-meatz', name: 'Mr. Meatz', logo: '/images/sponsors/mrmeatz.png', website: '#', tier: 'platinum' },
   { id: 'beachin-bottoms', name: "Beachin' Bottoms, LLC", logo: '/images/sponsors/BeachinBottomsLogo.jpg', website: 'https://beachinbottoms.com/', tier: 'platinum' },
   { id: 'lm-maintenance', name: 'L&M Maintenance and Equipment', logo: '/images/sponsors/LMMaintenanceLogo.png', website: '#', tier: 'platinum' },
+  { id: '4-korners', name: '4 Korners', logo: '/images/sponsors/4Korners.jpeg', website: '#', tier: 'platinum' },
 
   // Gold Sponsors (order matters)
   { id: 'seaway-scaffold', name: 'Seaway Scaffold & Equipment Co', logo: '/images/sponsors/SeawayScafoldLogo.jpg', website: 'https://www.seawayscaffold.com/', tier: 'gold' },
