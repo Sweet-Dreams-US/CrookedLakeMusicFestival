@@ -12,6 +12,16 @@ export const artists: Artist[] = [
     featured: true,
   },
   {
+    id: 'cherry-bomb',
+    name: 'Cherry Bomb',
+    slug: 'cherry-bomb',
+    image: '/images/bands/CherryBombLogo.jpg',
+    genre: '',
+    tier: 'supporting',
+    day: 'both',
+    featured: true,
+  },
+  {
     id: 'groupies-wanted',
     name: 'Groupies Wanted',
     slug: 'groupies-wanted',
