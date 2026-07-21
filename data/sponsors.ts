@@ -21,6 +21,9 @@ export const sponsors: Sponsor[] = [
   // Marketing Sponsor
   { id: 'sweet-dreams', name: 'Sweet Dreams US LLC', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'marketing' },
 
+  // DJ Sponsor
+  { id: 'year-round-muscle', name: 'Year Round Muscle', logo: '/images/sponsors/YearRoundMuscle.png', website: '#', tier: 'dj' },
+
   // Platinum Sponsors (order matters)
   { id: 'crush-house', name: 'Crush House Entertainment LLC', logo: '/images/sponsors/CrushHouseEntLogo.jpg', website: 'https://crushhouseent.com/', tier: 'platinum' },
   { id: 'pier-place', name: 'Pier Place Angola', logo: '/images/sponsors/PierPlaceOfAngolaLogo.png', website: 'https://www.thepierplace.com/', tier: 'platinum' },
