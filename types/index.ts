@@ -36,6 +36,7 @@ export type SponsorTier =
   | 'production'
   | 'fireworks'
   | 'marketing'
+  | 'dj'
   | 'platinum'
   | 'gold'
   | 'silver'

@@ -12,6 +12,7 @@ const specialtyConfig: { tier: SponsorTier; heading: string; logoHeight: string;
   { tier: 'production', heading: 'Production Sponsor', logoHeight: 'h-28 md:h-32', cols: 'grid-cols-1' },
   { tier: 'fireworks', heading: 'Fireworks Sponsor', logoHeight: 'h-28 md:h-32', cols: 'grid-cols-1' },
   { tier: 'marketing', heading: 'Marketing Sponsor', logoHeight: 'h-28 md:h-32', cols: 'grid-cols-1' },
+  { tier: 'dj', heading: 'Official DJ Sponsor', logoHeight: 'h-28 md:h-32', cols: 'grid-cols-1' },
 ];
 
 const tierConfig: { tier: SponsorTier; heading: string; cols: string; logoHeight: string }[] = [
