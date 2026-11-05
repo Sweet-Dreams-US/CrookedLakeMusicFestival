@@ -8,6 +8,9 @@ export const sponsors: Sponsor[] = [
   // Production Sponsor
   { id: 'koosters', name: "Koester's Body and Frame", logo: '/images/sponsors/KoostersBodyandFrameShoplogo.png', website: 'https://www.koestersales.com/', tier: 'production' },
 
+  // Marketing Sponsor
+  { id: 'sweet-dreams', name: 'Sweet Dreams US LLC', logo: '/images/sponsors/SweetDreamsLogo.png', website: 'https://sweetdreams.us/', tier: 'marketing' },
+
   // Platinum Sponsors (order matters)
   { id: 'crush-house', name: 'Crush House Entertainment LLC', logo: '/images/sponsors/CrushHouseEntLogo.jpg', website: 'https://crushhouseent.com/', tier: 'platinum' },
   { id: 'contact-financial', name: 'CFS Inc. (Contact Financial Services)', logo: '/images/sponsors/ContactFinancialServicesLogo.png', website: '#', tier: 'platinum' },
