@@ -35,7 +35,7 @@ export default function HeroSection() {
             A Charity Music Festival
           </span>
         </div>
-        <p className="text-lg sm:text-xl text-white/70 font-display font-semibold mb-3">2026 is Coming Soon</p>
+        <p className="text-lg sm:text-xl text-white/70 font-display font-semibold mb-3">2027 is Coming Soon</p>
         <h1 className="font-[var(--font-anton)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-3 leading-[0.9] tracking-tight" style={{ fontFamily: 'var(--font-anton)', textShadow: '0 4px 20px rgba(0,0,0,0.15)' }}>
           <span className="block text-lake whitespace-nowrap">CROOKED LAKE</span>
           <span className="block text-pink">SANDBAR</span>

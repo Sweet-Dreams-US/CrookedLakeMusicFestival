@@ -25,10 +25,17 @@ export default function TeamPage() {
           </ScrollReveal>
         </section>
 
-        {boardMembers.length > 0 && (
-          <section className="mb-20">
-            <h3 className="font-display text-2xl font-bold text-lake-950 text-center mb-8">Board of Directors</h3>
+        <section className="mb-20">
+          <h3 className="font-display text-2xl font-bold text-lake-950 text-center mb-8">Board of Directors</h3>
 
+          {boardMembers.length === 0 ? (
+            <ScrollReveal animation="fadeUp">
+              <div className="max-w-xl mx-auto bg-lake-50 rounded-2xl p-8 text-center">
+                <p className="font-display text-xl font-bold text-lake-950">Coming Soon</p>
+              </div>
+            </ScrollReveal>
+          ) : (
+            <>
             {officers.length > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-6">
                 {officers.map((member, i) => (
@@ -54,8 +61,9 @@ export default function TeamPage() {
                 ))}
               </div>
             )}
-          </section>
-        )}
+            </>
+          )}
+        </section>
 
         {teamLeads.length > 0 && (
           <section className="mb-20">

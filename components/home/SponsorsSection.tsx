@@ -44,10 +44,14 @@ function FeaturedSponsor({ sponsor }: { sponsor: Sponsor }) {
       {style?.label && (
         <span className="block text-xs font-bold uppercase tracking-wider text-lake mb-1">{style.label}</span>
       )}
-      <span className="block font-display font-bold text-lake-950 text-sm mb-2">{sponsor.name}</span>
+      {hasLogo(sponsor) && (
+        <span className="block font-display font-bold text-lake-950 text-sm mb-2">{sponsor.name}</span>
+      )}
       <div className={cn(style?.size, 'rounded-xl bg-lake-50 flex items-center justify-center transition-all duration-300 group-hover:shadow-elevated p-4')}>
-        {hasLogo(sponsor) && (
+        {hasLogo(sponsor) ? (
           <img src={assetPath(sponsor.logo)} alt={sponsor.name} className="max-w-full max-h-full object-contain" />
+        ) : (
+          <span className="font-display font-bold text-lake-950 text-lg text-center leading-tight">{sponsor.name}</span>
         )}
       </div>
     </SponsorWrap>
@@ -90,7 +94,9 @@ export default function SponsorsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <p className="text-center text-sand-800/60 mt-8 text-sm">More 2027 sponsors coming soon!</p>
+
+        <div className="text-center mt-8">
           <Button href="/sponsors" variant="ghost">Become a Sponsor</Button>
         </div>
       </div>

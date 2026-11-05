@@ -14,7 +14,7 @@ export default function LivestreamPage() {
             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-lake-900 to-lake-950">
               <div className="text-center">
                 <Video size={64} className="text-white/20 mx-auto mb-4" />
-                <h3 className="font-display text-2xl font-bold text-white mb-2">Stream Starts July 24</h3>
+                <h3 className="font-display text-2xl font-bold text-white mb-2">Stream Starts July 23</h3>
                 <p className="text-white/50 max-w-md mx-auto">The livestream will be available here during the festival. Check back on {SITE_CONFIG.dates}!</p>
               </div>
             </div>

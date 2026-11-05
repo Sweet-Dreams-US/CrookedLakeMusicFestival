@@ -8,11 +8,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Crooked Lake Sandbar Music Festival 2026',
-    template: '%s | Sandbar Music Fest 2026',
+    default: 'Crooked Lake Sandbar Music Festival 2027',
+    template: '%s | Sandbar Music Fest 2027',
   },
   description:
-    'A charity music festival on the sandbar at Crooked Lake in Angola, Indiana. July 24-25, 2026. Boat out, enjoy live music, and support a great cause.',
+    'A charity music festival on the sandbar at Crooked Lake in Angola, Indiana. July 23-24, 2027. Boat out, enjoy live music, and support a great cause.',
   keywords: [
     'music festival',
     'Crooked Lake',
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     'boat',
   ],
   openGraph: {
-    title: 'Crooked Lake Sandbar Music Festival 2026',
+    title: 'Crooked Lake Sandbar Music Festival 2027',
     description:
-      'A charity music festival on the sandbar at Crooked Lake. July 24-25, 2026.',
+      'A charity music festival on the sandbar at Crooked Lake. July 23-24, 2027.',
     type: 'website',
     locale: 'en_US',
   },

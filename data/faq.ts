@@ -2,7 +2,7 @@ import { FAQItem } from '@/types';
 
 export const faqItems: FAQItem[] = [
   { id: 'faq-1', question: 'What is the Crooked Lake Sandbar Music Festival?', answer: "It's a charity music festival held on the sandbar at Crooked Lake in Angola, Indiana. Everyone takes their boats out to enjoy live music, great company, and fun on the water for an amazing cause. All proceeds are donated to charity.", category: 'general' },
-  { id: 'faq-2', question: 'When is the festival?', answer: 'The 2026 festival takes place July 24-25. Music starts at noon on Friday and runs through Saturday night.', category: 'general' },
+  { id: 'faq-2', question: 'When is the festival?', answer: 'The 2027 festival takes place July 23-24. Music starts at noon on Friday and runs through Saturday night.', category: 'general' },
   { id: 'faq-3', question: 'Is the festival free to attend?', answer: 'The festival is free to attend on the water! We raise money through auctions, merchandise sales, sponsor contributions, and donations. All raised funds go to charity.', category: 'general' },
   { id: 'faq-4', question: 'How do I get to the sandbar?', answer: "You'll need a boat! The sandbar is located on Crooked Lake in Angola, Indiana. Check our venue page for exact coordinates and directions to the public boat launch.", category: 'venue' },
   { id: 'faq-5', question: 'What should I bring?', answer: "Bring sunscreen, water, snacks, and your best lake vibes! Coolers are welcome on your boat. Don't forget a hat and sunglasses. Check the venue page for a full list of what to bring and what to leave at home.", category: 'venue' },

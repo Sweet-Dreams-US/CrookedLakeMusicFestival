@@ -116,6 +116,8 @@ export default function SponsorsPage() {
           );
         })}
 
+        <p className="text-center text-sand-800/60 text-lg">More 2027 sponsors coming soon!</p>
+
         <section className="mt-20">
           <ScrollReveal animation="fadeUp">
             <div className="bg-gradient-to-br from-lake-950 to-lake-900 rounded-3xl p-12 text-center">
