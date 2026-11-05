@@ -14,13 +14,14 @@ export default function VideoSection() {
           </div>
           <div className="relative aspect-video max-h-[75vh] mx-auto rounded-3xl overflow-hidden bg-lake-900 shadow-elevated">
             <iframe
-              src="https://customer-w6h9o08eg118alny.cloudflarestream.com/9e6cbe7feb4aced957fb4fe43c8e9f16/iframe"
+              src="https://customer-w6h9o08eg118alny.cloudflarestream.com/bf3bf5227fc0638d4158108ce74215a7/iframe"
+              title="2026 Crooked Lake Sandbar Music Festival Recap"
               className="w-full h-full"
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
             />
             <div className="absolute bottom-4 right-4 px-3 py-1.5 rounded-lg bg-black/60 backdrop-blur-sm border border-white/10">
-              <span className="text-white/80 text-sm font-semibold">2025 Recap</span>
+              <span className="text-white/80 text-sm font-semibold">2026 Recap</span>
             </div>
           </div>
           <div className="text-center mt-6">

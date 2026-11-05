@@ -4,7 +4,9 @@ import ScrollReveal from '@/components/ui/ScrollReveal';
 import Button from '@/components/ui/Button';
 import { Heart } from 'lucide-react';
 
-const OFFICER_TITLES = new Set(['President', 'Vice President', 'Secretary/Treasurer', 'Secretary', 'Treasurer']);
+const STORY_VIDEO_ID = '517a75aaf2af7b1c9780643c71ec8cd0';
+
+const OFFICER_TITLES =new Set(['President', 'Vice President', 'Secretary/Treasurer', 'Secretary', 'Treasurer']);
 
 export default function TeamPage() {
   const boardMembers = teamMembers.filter((m) => m.category === 'board').sort((a, b) => a.order - b.order);
@@ -20,6 +22,15 @@ export default function TeamPage() {
           <ScrollReveal animation="fadeUp">
             <div className="max-w-3xl mx-auto bg-lake-50 rounded-3xl p-8 md:p-12">
               <h3 className="font-display text-2xl font-bold text-lake-950 mb-4">Our Story</h3>
+              <div className="aspect-video rounded-2xl overflow-hidden bg-lake-950 shadow-elevated mb-6">
+                <iframe
+                  src={`https://customer-w6h9o08eg118alny.cloudflarestream.com/${STORY_VIDEO_ID}/iframe`}
+                  title="The story of the Crooked Lake Sandbar Music Festival"
+                  className="w-full h-full"
+                  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
               <p className="text-sand-800/80 leading-relaxed">{festivalStory}</p>
             </div>
           </ScrollReveal>

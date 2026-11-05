@@ -2,6 +2,7 @@ import { GalleryItem } from '@/types';
 
 export const galleryItems: GalleryItem[] = [
   // Videos
+  { id: 'video-2025', type: 'video', videoId: '9e6cbe7feb4aced957fb4fe43c8e9f16', alt: '2025 Festival Recap' },
   { id: 'video-2016', type: 'video', videoId: '1297f1ded8993a06f383c2a0812c30c0', alt: '2016 Crooked Lake Sandbar Music Festival' },
   { id: 'video-2017', type: 'video', videoId: 'bd4f79013b91f5211dc011fc8e6feecb', alt: 'Crooked Lake Music Fest 2017' },
   { id: 'video-2021', type: 'video', videoId: '706fcfc9393c7b6e2749cc020fad5b5a', alt: '2021 Sandbar Music Festival' },
